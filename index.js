@@ -104,7 +104,7 @@ app.post("/bfhl", (req, res) => {
 
 // Global error handling middleware
 app.use((req, res) => {
-  console.error(err.stack);
+//   console.error(err.stack);
   res.status(500).json({ Status: "Error", Message: "Something went wrong!" });
 });
 
